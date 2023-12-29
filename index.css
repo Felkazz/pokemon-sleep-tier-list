@@ -1,0 +1,137 @@
+p {
+    margin: 0px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-top: 10px;
+    user-select: none;
+}
+
+label:before {
+    content: "☐";
+    position: absolute;
+    line-height: 0px;
+    top: 8px;
+    left: 18px;
+}
+
+:checked + label:before {
+    content: "🗹";
+}
+
+.berryListImg, .ingredientListImg {
+    width: 50px;
+    height: 50px;
+}
+
+table, th, td {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    background-color: #1a1a17;
+    line-height: 0px;
+}
+
+th {
+    width: 104px;
+    height: 104px;
+    font-size: x-large;
+}
+
+.splus {
+    background-color: #ff7f7f;
+}
+
+.s {
+    background-color: #ffbf7f;
+}
+
+.sminus {
+    background-color: #ffdf7f;
+}
+
+.aplus {
+    background-color: #ffff7f;
+}
+
+.a {
+    background-color: #bfff7f;
+}
+
+.aminus {
+    background-color: #7fff7f;
+}
+
+.bplus {
+    background-color: #7fffff;
+}
+
+.b {
+    background-color: #7fbfff;
+}
+
+.bminus {
+    background-color: #7f7fff;
+}
+
+.cplus {
+    background-color: #ff7fff;
+}
+
+.c {
+    background-color: #bf7fbf;
+}
+
+.cminus {
+    background-color: #858585;
+}
+
+.f {
+    background-color: #cfcfcf;
+}
+
+.pokemonContainer {
+    position: relative;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    line-height: 0px;
+    margin: 2px;
+
+}
+
+.pokemonImg {
+    width: 100px;
+    height: 100px;
+}
+
+.berryImg {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 33px;
+    height: 33px;
+}
+
+.ingredientsContainer {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    margin: 0px;
+    padding: 0px;
+    line-height: 0px;
+}
+
+.ingredientImg {
+    width: 33x;
+    height: 33px;
+}
