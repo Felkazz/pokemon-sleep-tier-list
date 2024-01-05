@@ -71,6 +71,41 @@ label:active img {
     height: 50px;
 }
 
+button {
+    color: white;
+    border-radius: 5px;
+    border-style: outset;
+    border-width: 2px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:active {
+    border-style: inset;
+    transform: translate(1px);
+}
+
+.green {
+    background-color: #04AA6D;
+    border-color: #04AA6D;
+}
+
+.green:hover {
+    background-color: #049d65;
+    border-color: #049d65;
+}
+
+.blue {
+    background-color: #008CBA;
+    border-color: #008CBA;
+}
+
+.blue:hover {
+    background-color: #0082ad;
+    border-color: #0082ad;
+}
+
 table, th, td {
     border-style: solid;
     border-width: 2px;

@@ -125,7 +125,6 @@ function orderDB() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    orderDB();
     let berryListContainer = document.getElementById("berryList");
     for(let i = 0; i < berryDB.length; i++) {
         let berry = berryDB[i];
@@ -168,7 +167,12 @@ document.addEventListener("DOMContentLoaded", () => {
         ingredientContainer.appendChild(label);
         ingredientListContainer.appendChild(ingredientContainer);
     }
+    orderDB();
     document.getElementById("filter").addEventListener("click", () => {
+        generateTierList();
+    });
+    document.getElementById("clear").addEventListener("click", () => {
+        Array.from(document.querySelectorAll("input:checked")).forEach(e => e.checked = false);
         generateTierList();
     });
     generateTierList();
