@@ -74,36 +74,32 @@ label:active img {
 button {
     color: white;
     border-radius: 5px;
-    border-style: outset;
-    border-width: 2px;
+    border-style: none;
     padding: 5px 10px;
     cursor: pointer;
     font-size: 18px;
+    transition: transform 0.1s;
 }
 
 button:active {
-    border-style: inset;
-    transform: translate(1px);
+    transform: scale(0.98, 0.98);
+    transition: transform 0.1s;
 }
 
 .green {
     background-color: #04AA6D;
-    border-color: #04AA6D;
 }
 
 .green:hover {
     background-color: #049d65;
-    border-color: #049d65;
 }
 
 .blue {
     background-color: #008CBA;
-    border-color: #008CBA;
 }
 
 .blue:hover {
     background-color: #0082ad;
-    border-color: #0082ad;
 }
 
 table, th, td {
