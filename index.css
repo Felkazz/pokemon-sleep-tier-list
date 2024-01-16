@@ -72,34 +72,63 @@ label:active img {
 }
 
 button {
-    color: white;
+    color: black;
     border-radius: 5px;
-    border-style: none;
+    border-style: solid;
+    border-width: 1px;
+    background-color: white;
     padding: 5px 10px;
     cursor: pointer;
     font-size: 18px;
     transition: transform 0.1s;
+    width: 150px;
+}
+
+button:hover {
+    background-color: #fcfcfc;
 }
 
 button:active {
-    transform: scale(0.98, 0.98);
+    transform: scale(0.97, 0.97);
     transition: transform 0.1s;
 }
 
 .green {
-    background-color: #04AA6D;
+    border-color: #04AA6D;
 }
 
-.green:hover {
-    background-color: #049d65;
+.green svg {
+    color: #04AA6D;
+    stroke: #04AA6D;
 }
 
 .blue {
-    background-color: #008CBA;
+    border-color: #008CBA;
 }
 
-.blue:hover {
-    background-color: #0082ad;
+.blue svg {
+    color: #008CBA;
+    stroke: #008CBA;
+}
+
+.buttonTable, .buttonTable td {
+    border: none;
+    background-color: white;
+    line-height: normal;
+    font-weight: bold;
+}
+
+.buttonTable td:first-of-type {
+    padding-right: 10px;
+}
+
+.buttonImg {
+    padding-right: 10px;
+    display: inline-block;
+}
+
+.buttonTxt {
+    display: inline-block;
 }
 
 table, th, td {
